@@ -1,5 +1,4 @@
 import os
-import mysql.connector
 
 def reverse(args):
   inp = args.get("input", "")
