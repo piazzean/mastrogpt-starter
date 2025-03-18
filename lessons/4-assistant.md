@@ -121,8 +121,10 @@ res = client.chat.completions.create(
 Receive a stream:
 
 ```python
+import time
 for m in res: 
-   print(m.choices[0].delta.content)
+   print(m.choices[0].delta.content, end="", flush=True)
+   time.sleep(2)
 ```
 
 ---
